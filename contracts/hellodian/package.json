@@ -1,0 +1,34 @@
+{
+  "engines": {
+    "composer": "^0.20.0"
+  },
+  "name": "hellodian",
+  "version": "0.0.1",
+  "description": "hellodiandesc",
+  "scripts": {
+    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/hellodian.bna"
+
+  },
+  "keywords": [
+    "composer",
+    "composer-network"
+  ],
+  "author": "hellodian",
+  "email": "1489062417@qq.com",
+  "license": "1.0",
+  "devDependencies": {
+    "composer-admin": "^0.20.0",
+    "composer-cli": "^0.20.0",
+    "composer-client": "^0.20.0",
+    "composer-common": "^0.20.0",
+    "composer-connector-embedded": "^0.20.0",
+    "composer-cucumber-steps": "^0.20.0",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "cucumber": "^2.2.0",
+    "eslint": "latest",
+    "nyc": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
